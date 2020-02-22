@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SchoolLab_3.TestingPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text = "2 четверть" FontSize="Medium"/>
+            <ScrollView Orientation="Both">
+                <Grid x:Name="grid">
+                    <Grid.RowDefinitions>
+                        <!-- Количество учеников (15) -->
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <!-- На имя (5) -->
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+
+                        <!-- Оценки (10) -->
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="50"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="entry_1_8" BackgroundColor="Gray" Grid.Row="1" Grid.Column="8" 
+                           Text="{Binding Text Source}" TextChanged="Text_Changed"
+                           
+                     />
+
+                    <Label Text = "{Binding SelectStudent}" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2" />
+                    <Button HeightRequest = "100" Command ="{Binding MySwitch}" Text="{Binding MySwitch}" Grid.Row="0" Grid.Column="2" />
+                    <Button HeightRequest = "100" Text="3" Grid.Row="0" Grid.Column="3" />
+                    <Label Text="Я сделала что надо" Grid.Row="1" Grid.Column="0" />
+                    <Button HeightRequest = "100" Text="5" Grid.Row="1" Grid.Column="1" />
+                    <Button HeightRequest = "100" Text="6" Grid.Row="1" Grid.Column="2" />
+                    <Button HeightRequest = "100" Text="6" Grid.Row="1" Grid.Column="3" />
+                    <Label Text="Я сделала что надо" Grid.Row="2" Grid.Column="0" />
+                    <Button HeightRequest = "100" Text="8" Grid.Row="2" Grid.Column="1" />
+                    <Button HeightRequest = "100" Text="9" Grid.Row="2" Grid.Column="2" />
+                    <Button HeightRequest = "100" Text="6" Grid.Row="2" Grid.Column="3" />
+                    <Button HeightRequest = "100" Text="6" Grid.Row="2" Grid.Column="4" />
+                    <Label Text="Я сделала что надо" Grid.Row="3" Grid.Column="0" />
+                    <Button HeightRequest = "100" Text="11" Grid.Row="3" Grid.Column="1" />
+                    <Button HeightRequest = "100" Text="12" Grid.Row="3" Grid.Column="2" />
+                    <Button HeightRequest = "100" Text="6" Grid.Row="3" Grid.Column="3" />
+                    <Label Text="Я сделала что надо" Grid.Row="4" Grid.Column="0" />
+                    <Button HeightRequest = "100" Text="12" Grid.Row="4" Grid.Column="1" />
+                    <Button HeightRequest = "100" Text="12" Grid.Row="4" Grid.Column="2" />
+                    <Button HeightRequest = "100" Text="12" Grid.Row="5" Grid.Column="2" />
+
+                    <Button HeightRequest = "100" Text="13" Grid.Row="4" Grid.Column="0" />
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

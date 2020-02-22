@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SchoolLab_3.SubjectsPage"
+             Title="Предметы">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image x:Name="Russian" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <Button Text="Русский язык" TextColor="White" BackgroundColor="#FF6347"
+                    FontSize="Large" BorderWidth="1" CornerRadius="1"
+                    Margin="8, 10, 15, 8"
+                    FontAttributes="Italic"  Clicked="Russian_Click"></Button>
+
+            <Image x:Name="Literature"
+                   VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <Button Text="Литература"  TextColor="White" BackgroundColor="#FF6347" 
+                    FontSize="Large" BorderWidth="1" CornerRadius="1"
+                    Margin="0, 10, 15, 5"
+                    FontAttributes="Italic"  Clicked="Literature_Click"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

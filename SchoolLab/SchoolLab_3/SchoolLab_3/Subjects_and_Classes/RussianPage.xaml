@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SchoolLab_3.RussianPage"
+             Title="Русский язык">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Image x:Name="Russian" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <Button Text="8-A" TextColor="White" BackgroundColor="#FF6347"
+                    FontSize="Large" BorderWidth="1" CornerRadius="1"
+                    Margin="8, 10, 15, 8"
+                    FontAttributes="Italic"  Clicked="Eight_A_Click"></Button>
+
+            <Image x:Name="Literature"
+                   VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+            <Button Text="8-Б"  TextColor="White" BackgroundColor="#FF6347" 
+                    FontSize="Large" BorderWidth="1" CornerRadius="1"
+                    Margin="0, 10, 15, 5"
+                    FontAttributes="Italic"  Clicked="Eight_B_Click"></Button>
+            
+            <Button Text="Testing" TextColor="White" BackgroundColor="#FF6347"
+                    FontSize="Large" BorderWidth="1" CornerRadius="1"
+                    Margin="8, 10, 15, 8"
+                    FontAttributes="Italic"  Clicked="Testing_Click"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SchoolLab_3.MainPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Личный кабинет">
+            <ContentPage.Content>
+                <StackLayout BackgroundColor="White">
+                    <ListView 
+                         ItemsSource="{Binding MenuItems}" 
+                         HasUnevenRows="True" 
+                         SeparatorVisibility="Default"
+                         ItemTapped="Menu_Button_Click"
+                         x:Name="Menu_Items_List">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.View>
+                                        <StackLayout Orientation="Horizontal" Spacing="8" Margin="8,0,0,0">
+                                            <Image Source="{Binding Icon}" HeightRequest="64" />
+                                            <Label TextColor="Black" Text="{Binding Name}" FontSize="Medium" VerticalOptions="Center"/>
+                                        </StackLayout>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+
+</MasterDetailPage>

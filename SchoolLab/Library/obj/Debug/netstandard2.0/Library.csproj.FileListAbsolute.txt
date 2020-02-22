@@ -1,0 +1,8 @@
+C:\Users\Ira\Documents\Xamarin\SchoolLab\Library\bin\Debug\netstandard2.0\Library.deps.json
+C:\Users\Ira\Documents\Xamarin\SchoolLab\Library\bin\Debug\netstandard2.0\Library.dll
+C:\Users\Ira\Documents\Xamarin\SchoolLab\Library\bin\Debug\netstandard2.0\Library.pdb
+C:\Users\Ira\Documents\Xamarin\SchoolLab\Library\obj\Debug\netstandard2.0\Library.AssemblyInfoInputs.cache
+C:\Users\Ira\Documents\Xamarin\SchoolLab\Library\obj\Debug\netstandard2.0\Library.AssemblyInfo.cs
+C:\Users\Ira\Documents\Xamarin\SchoolLab\Library\obj\Debug\netstandard2.0\Library.dll
+C:\Users\Ira\Documents\Xamarin\SchoolLab\Library\obj\Debug\netstandard2.0\Library.pdb
+C:\Users\Ira\Documents\Xamarin\SchoolLab\Library\obj\Debug\netstandard2.0\Library.csprojAssemblyReference.cache
